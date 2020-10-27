@@ -31,7 +31,9 @@ find_package(GTest CONFIG REQUIRED)
 # TODO: change lr2 word to project name and delete this comment
 add_library(lr2 STATIC
         # enum your files and delete this comment
-        ../LAB32/sources/proc_check.cpp ../LAB32/include/proc_check.hpp ../LAB32/sources/main.cpp)
+        ../LAB32/sources/proc_check.cpp ../LAB32/include/proc_check.hpp
+        #../LAB32/sources/main.cpp
+        )
 add_executable(tests
         # TODO: enum your files and delete this comment
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
@@ -56,13 +58,13 @@ target_link_libraries(tests GTest::main lr2)
 enable_testing()
 add_test(NAME unit_tests COMMAND tests)
 
-if(BUILD_COVERAGE)
-  set(ENABLE_COVERAGE ON CACHE BOOL "Enable coverage build." FORCE)
-  list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
-  find_package(codecov)
-  # TODO: change lr2 word to project name and delete this comment
-  add_coverage(lr2)
-  add_coverage(tests)
-  list(APPEND LCOV_REMOVE_PATTERNS "'${PROJECT_SOURCE_DIR}/tests/*'")
-  coverage_evaluate()
-endif()
+if (BUILD_COVERAGE)
+    set(ENABLE_COVERAGE ON CACHE BOOL "Enable coverage build." FORCE)
+    list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+    find_package(codecov)
+    # TODO: change lr2 word to project name and delete this comment
+    add_coverage(lr2)
+    add_coverage(tests)
+    list(APPEND LCOV_REMOVE_PATTERNS "'${PROJECT_SOURCE_DIR}/tests/*'")
+    coverage_evaluate()
+endif ()
