@@ -156,3 +156,6 @@ investigation:                                       |  investigation:
 ```
 
 ⚠️ В отчет также необходимо добавить общий график с результатами всех исследований. ⚠️
+#График
+Ниже представлен график с результатами всех исследований.
+![Image alt](https://github.com//STaRiCHDED/LAB32/raw/lab02/KCAI0PvA5us.jpg)
