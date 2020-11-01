@@ -1,0 +1,171 @@
+investigation:
+	travel_order: direction
+	- experiment:
+		number: 1
+		input_data:
+			buffer_size: 32768 B
+		results:
+			duration: 3.289ms
+	- experiment:
+		number: 2
+		input_data:
+			buffer_size: 65536 B
+		results:
+			duration: 6.486ms
+	- experiment:
+		number: 3
+		input_data:
+			buffer_size: 131072 B
+		results:
+			duration: 12.473ms
+	- experiment:
+		number: 4
+		input_data:
+			buffer_size: 262144 B
+		results:
+			duration: 24.668ms
+	- experiment:
+		number: 5
+		input_data:
+			buffer_size: 524288 B
+		results:
+			duration: 48.501ms
+	- experiment:
+		number: 6
+		input_data:
+			buffer_size: 1048576 B
+		results:
+			duration: 100.846ms
+	- experiment:
+		number: 7
+		input_data:
+			buffer_size: 2097152 B
+		results:
+			duration: 198.749ms
+	- experiment:
+		number: 8
+		input_data:
+			buffer_size: 4194304 B
+		results:
+			duration: 345.025ms
+	- experiment:
+		number: 9
+		input_data:
+			buffer_size: 8388608 B
+		results:
+			duration: 661.647ms
+
+investigation:
+	travel_order: reverse
+	- experiment:
+		number: 1
+		input_data:
+			buffer_size: 32768 B
+		results:
+			duration: 1.079ms
+	- experiment:
+		number: 2
+		input_data:
+			buffer_size: 65536 B
+		results:
+			duration: 2.551ms
+	- experiment:
+		number: 3
+		input_data:
+			buffer_size: 131072 B
+		results:
+			duration: 5.13ms
+	- experiment:
+		number: 4
+		input_data:
+			buffer_size: 262144 B
+		results:
+			duration: 9.65ms
+	- experiment:
+		number: 5
+		input_data:
+			buffer_size: 524288 B
+		results:
+			duration: 19.935ms
+	- experiment:
+		number: 6
+		input_data:
+			buffer_size: 1048576 B
+		results:
+			duration: 42.189ms
+	- experiment:
+		number: 7
+		input_data:
+			buffer_size: 2097152 B
+		results:
+			duration: 76.925ms
+	- experiment:
+		number: 8
+		input_data:
+			buffer_size: 4194304 B
+		results:
+			duration: 146.451ms
+	- experiment:
+		number: 9
+		input_data:
+			buffer_size: 8388608 B
+		results:
+			duration: 293.141ms
+
+investigation:
+	travel_order: random
+	- experiment:
+		number: 1
+		input_data:
+			buffer_size: 32768 B
+		results:
+			duration: 4.901ms
+	- experiment:
+		number: 2
+		input_data:
+			buffer_size: 65536 B
+		results:
+			duration: 10.012ms
+	- experiment:
+		number: 3
+		input_data:
+			buffer_size: 131072 B
+		results:
+			duration: 18.665ms
+	- experiment:
+		number: 4
+		input_data:
+			buffer_size: 262144 B
+		results:
+			duration: 36.703ms
+	- experiment:
+		number: 5
+		input_data:
+			buffer_size: 524288 B
+		results:
+			duration: 76.374ms
+	- experiment:
+		number: 6
+		input_data:
+			buffer_size: 1048576 B
+		results:
+			duration: 161.322ms
+	- experiment:
+		number: 7
+		input_data:
+			buffer_size: 2097152 B
+		results:
+			duration: 336.081ms
+	- experiment:
+		number: 8
+		input_data:
+			buffer_size: 4194304 B
+		results:
+			duration: 670.46ms
+	- experiment:
+		number: 9
+		input_data:
+			buffer_size: 8388608 B
+		results:
+			duration: 1302.65ms
+

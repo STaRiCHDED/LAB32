@@ -1,6 +1,6 @@
 // Copyright 2020 Nikita Klimov nik179804@gmail.com
 
-#include "../../LAB32/include/proc_check.hpp"
+#include "proc_check.hpp"
 
 #include <algorithm>
 #include <iomanip>
@@ -43,7 +43,7 @@ void proc_check::countReverse() {
   travel_variant = "reverse";
   for (const int& i : size_buf) {
     int* arr = new int[static_cast<int>(i / 4.0)];
-    for (size_t j = i / 4.0; j > 0; j -= sixteen) {
+    for (size_t j = 0; j < i / 4.0; j += sixteen) {
       k = arr[j];
     }
     int start_time = clock();

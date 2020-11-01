@@ -31,20 +31,13 @@ find_package(GTest CONFIG REQUIRED)
 # TODO: change lr2 word to project name and delete this comment
 add_library(lr2 STATIC
         # enum your files and delete this comment
-        ../LAB32/sources/proc_check.cpp ../LAB32/include/proc_check.hpp
-        #../LAB32/sources/main.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources/proc_check.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/proc_check.hpp
         )
 add_executable(tests
         # TODO: enum your files and delete this comment
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
         )
-
-#add_executable(main ../LAB32/sources/main.cpp ../LAB32/include/proc_check.hpp ../LAB32/sources/proc_check.cpp)
-
-# TODO: change lr2 word to project name and delete this comment
-#target_include_directories(main
-#       PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
-#        )
 
 target_include_directories(lr2
         PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include

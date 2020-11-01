@@ -30,4 +30,4 @@ class proc_check {
   friend std::ostream& operator<<(std::ostream& out, const proc_check& a);
 };
 
-#endif   // INCLUDE_PROC_CHECK_HPP_
+#endif  // INCLUDE_PROC_CHECK_HPP_
