@@ -39,12 +39,12 @@ add_executable(tests
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
         )
 
-add_executable(main ../LAB32/sources/main.cpp ../LAB32/include/proc_check.hpp ../LAB32/sources/proc_check.cpp)
+#add_executable(main ../LAB32/sources/main.cpp ../LAB32/include/proc_check.hpp ../LAB32/sources/proc_check.cpp)
 
 # TODO: change lr2 word to project name and delete this comment
-target_include_directories(main
-        PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
-        )
+#target_include_directories(main
+#       PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
+#        )
 
 target_include_directories(lr2
         PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
